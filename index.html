@@ -8,32 +8,34 @@
 </head>
 <body>
   <h1 class="title">Registrate</h1>
-  <form action="" class="formulario">
-    <div class="formulario__container--inputs">
-      <div class="formulario__conteiner-item">
-        <label for="nombre" class="text--info">Nombre</label>
-        <input type="text" id="nombre">
+  <div class="container__formulario">
+    <form action="" class="formulario">
+      <div class="formulario__container--inputs">
+        <div class="formulario__conteiner-item">
+          <label for="nombre" class="text--info">Nombre</label>
+          <input type="text" id="nombre">
+        </div>
+        <div class="formulario__conteiner-item">
+          <label for="correo" class="text--info">Email</label>
+          <input type="email" name="" id="correo">
+        </div>
+        <div class="formulario__conteiner-item">
+          <label for="cursos" class="text--info">Cursos</label>
+          <select name="" id="cursos" class="formulario__cursos--seleccionar">
+            <option value="Seleccionar" class="seleccionar-curso--item">Seleccionar</option>
+            <option value="HTML" class="seleccionar-curso--item">HTML</option>
+            <option value="CSS" class="seleccionar-curso--item">CSS</option>
+            <option value="JavaScript" class="seleccionar-curso--item">JavaScript</option>
+            <option value="React" class="seleccionar-curso--item">React</option>
+            <option value="Node js" class="seleccionar-curso--item">Node js</option>
+            <option value="MYSQL" class="seleccionar-curso--item">MYSQL</option>
+          </select>
+        </div>
       </div>
-      <div class="formulario__conteiner-item">
-        <label for="correo" class="text--info">Email</label>
-        <input type="email" name="" id="correo">
+      <div class="formulario__container-item formulario--boton">
+        <input type="button" value="Registrar" class="formulario__boton--registrar">
       </div>
-      <div class="formulario__conteiner-item">
-        <label for="cursos" class="text--info">Cursos</label>
-        <select name="" id="cursos" class="formulario__cursos--seleccionar">
-          <option value="Seleccionar" class="seleccionar-curso--item">Seleccionar</option>
-          <option value="HTML" class="seleccionar-curso--item">HTML</option>
-          <option value="CSS" class="seleccionar-curso--item">CSS</option>
-          <option value="JavaScript" class="seleccionar-curso--item">JavaScript</option>
-          <option value="React" class="seleccionar-curso--item">React</option>
-          <option value="Node js" class="seleccionar-curso--item">Node js</option>
-          <option value="MYSQL" class="seleccionar-curso--item">MYSQL</option>
-        </select>
-      </div>
-    </div>
-    <div class="formulario__container-item">
-      <input type="button" value="Registrar" class="formulario__boton--registrar">
-    </div>
-  </form>
+    </form>
+  </div>
 </body>
 </html>

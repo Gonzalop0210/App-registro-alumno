@@ -8,19 +8,31 @@ body {
   background-color: #333;
   color: aliceblue;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  padding: 20px 15%;
+  padding: 2% 15% 1% 15%;
 }
 
 .title {
   text-align: center;
 }
 
-.formulario {
+.container__formulario {
   display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.formulario {
+  display: inline-flex;
   align-items: center;
   flex-direction: column;
 }
 
 .formulario__container--inputs {
   display: flex;
+  gap: 100px;
+}
+
+.formulario--boton {
+  align-self: flex-start;
 }
