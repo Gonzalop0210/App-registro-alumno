@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Registro Alumno</title>
   <link rel="stylesheet" href="index.css">
+  <script src="https://kit.fontawesome.com/6d642dc6ea.js" crossorigin="anonymous"></script>
 </head>
 <body>
   <h1 class="title">Registrate</h1>
@@ -13,15 +14,15 @@
       <div class="formulario__container--inputs">
         <div class="formulario__conteiner-item">
           <label for="nombre" class="text--info">Nombre</label>
-          <input type="text" id="nombre">
+          <input class="formulario__input" type="text" id="nombre">
         </div>
         <div class="formulario__conteiner-item">
           <label for="correo" class="text--info">Email</label>
-          <input type="email" name="" id="correo">
+          <input class="formulario__input" type="email" name="" id="correo">
         </div>
         <div class="formulario__conteiner-item">
           <label for="cursos" class="text--info">Cursos</label>
-          <select name="" id="cursos" class="formulario__cursos--seleccionar">
+          <select name="" id="cursos" class="formulario__cursos--seleccionar formulario__input">
             <option value="Seleccionar" class="seleccionar-curso--item">Seleccionar</option>
             <option value="HTML" class="seleccionar-curso--item">HTML</option>
             <option value="CSS" class="seleccionar-curso--item">CSS</option>
@@ -31,11 +32,26 @@
             <option value="MYSQL" class="seleccionar-curso--item">MYSQL</option>
           </select>
         </div>
+        <div class="formulario__container-item container--cursos-seleccionados">
+          <!-- <div class="item--cursos-seleccionados">
+            <span class="nombre--curso-seleccionado">HTML</span>
+            <i class="fa-solid fa-xmark icon_equis"></i>
+          </div> -->
+        </div>
       </div>
       <div class="formulario__container-item formulario--boton">
         <input type="button" value="Registrar" class="formulario__boton--registrar">
       </div>
     </form>
+  </div>
+  <div class="container--nuevo-usuario ocultar">
+    <h2 class="title--bienvenida-usuario">Hola <span class="nombre--usuario">Gonzalo</span>, bienvenido!</h2>
+    <div class="nu__container--cursos-seleccionados">
+      <div class="item--curso-seleccionado">
+        <span class="nu__nombre--curso-seleccionado">HTML</span>
+        <i class="fa-solid fa-trash-can nu_icon_delete"></i>
+      </div>
+    </div>
   </div>
 </body>
 </html>
